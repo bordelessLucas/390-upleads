@@ -4,6 +4,7 @@ import { ProtectedRoutes } from "./ProtectRoutes";
 import Login from "../pages/Login/Login";
 import Registro from "../pages/Registro/Registro";
 import Dashboard from "../pages/Dashboard/Dashboard";
+import Mensagens from "../pages/Mensagens/Mensagens";
 
 
 export const AppRoutes = () => {
@@ -14,6 +15,7 @@ export const AppRoutes = () => {
                 <Route path={paths.login} element={<Login />} />
                 <Route path={paths.register} element={<Registro />} />
                 <Route path={paths.dashboard} element={<ProtectedRoutes><Dashboard /></ProtectedRoutes>} />
+                <Route path={paths.mensagens} element={<ProtectedRoutes><Mensagens /></ProtectedRoutes>} />
             </Routes>
         </BrowserRouter>
     )

@@ -1,4 +1,3 @@
-import { useAuth } from '../../contexts/AuthContext';
 import { useSidebar } from '../../contexts/SideBarContext';
 import { Header } from '../../components/layout/Header';
 import { Sidebar } from '../../components/layout/Sidebar';
@@ -13,7 +12,6 @@ import {
 import './Dashboard.css';
 
 const Dashboard = () => {
-  const { currentUser } = useAuth();
   const { isOpen } = useSidebar();
 
   const stats = [
@@ -76,9 +74,6 @@ const Dashboard = () => {
           <div className="dashboard-header">
             <div>
               <h1 className="dashboard-title">Dashboard</h1>
-              <p className="dashboard-subtitle">
-                Bem-vindo, {currentUser?.email?.split('@')[0] || 'Usuário'}
-              </p>
             </div>
           </div>
 
