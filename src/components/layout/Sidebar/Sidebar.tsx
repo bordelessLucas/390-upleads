@@ -1,4 +1,4 @@
-import { useSidebar } from '../../../contexts/SideBarContext';
+import { useSidebar } from '../../../contexts/SidebarContext';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { paths } from '../../../routes/paths';
 import './Sidebar.css';

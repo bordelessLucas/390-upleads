@@ -1,5 +1,5 @@
 import { useAuth } from '../../../contexts/AuthContext';
-import { useSidebar } from '../../../contexts/SideBarContext';
+import { useSidebar } from '../../../contexts/SidebarContext';
 import { useNavigate } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import reactLogo from '../../../assets/react.svg';
